@@ -84,13 +84,4 @@ Animated Response:
   <img src="../master/Pic/Anim2.gif" />
 </p>
 
-``` Matlab
-N1 = 475550
-Elapsed time is 8.417751 seconds.
-
-N2 = 475550
-Elapsed time is 0.002251 seconds.
-```
-
-
 
