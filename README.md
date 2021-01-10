@@ -77,7 +77,7 @@ tt = linspace(0,30,500);
 
 Angle and length of spring pendulum:
 <p align="center">
-  <img src="../master/Pic/Ex1.png" />
+  <img src="../master/Pic/Ex2.png" />
 </p>
 Animated Response:
 <p align="center">
