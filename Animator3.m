@@ -10,22 +10,31 @@ try
     
     th1 = X(1,1); dx = X(1,2);
     
-    L1  = 3;
+    L1  = 3; % length of pendulum
+    L2 = 1;  % length of spring
+    
     x11 = 5 + dx; y11 = 5;
     
     x12 = x11 + L1*sin(th1);
     y12 = y11 - L1*cos(th1);
     H1  = line([x11 x12],[y11 y12],'linewidth',2);
+    hold on;
+    a = 0.1; tt = linspace(0,L2+dx,1e3);
+    xs = tt; ys = 5+a*sin(100/(L2+dx)*tt);
+    H2 = plot(xs+(5-L2), ys);
+    
     set(gca,'xlim',[3 7],'ylim',[3 6])
     axis equal
     
     hold on;
-    H2 = plot(x11, y11, 's', 'markersize', 14, ...
-        'linewidth', 3, 'color', [0, 0.5, 0], 'markerfacecolor', [0, 0.5, 0]);
+    H3 = plot(x11, y11, 's', 'markersize', 20, ...
+        'linewidth', 2, 'color', [0, 0.8, 0], 'markerfacecolor', [0, 0.8, 0]);
     
-    H3 = plot(x12, y12, 'O', 'markersize', 14, ...
+    H4 = plot(x12, y12, 'O', 'markersize', 14, ...
         'linewidth', 2, 'color', 'r', 'markerfacecolor','r');
     plot([4 6],[y11 y11],'--k');
+    
+
     box on; axis equal
     set(gca,'xlim',[3 7],'ylim',[3 6])
     
@@ -42,10 +51,14 @@ try
         x12 = x11 + L1*sin(th1);
         y12 = y11 - L1*cos(th1);
         
+        a = 0.1; tt = linspace(0,L2+dx,1e3);
+        xs = tt; ys = 5+a*sin(100/(L2+dx)*tt);
+
         %%
         set(H1,'XData',[x11 x12],'YData', [y11 y12])
-        set(H2,'XData', x11, 'YData', y11);
-        set(H3,'XData', x12, 'YData', y12);
+        set(H2, 'XData', xs +(5-L2), 'YData', ys);
+        set(H3,'XData', x11, 'YData', y11);
+        set(H4,'XData', x12, 'YData', y12);
         
         frame = getframe(Hf); im = frame2im(frame); [imind,cm] = rgb2ind(im,256);
         imwrite(imind,cm,filename,'gif', 'WriteMode','append', 'DelayTime',0.05);
