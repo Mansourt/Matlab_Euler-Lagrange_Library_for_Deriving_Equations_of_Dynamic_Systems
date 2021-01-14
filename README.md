@@ -85,20 +85,20 @@ Animated Response:
 </p>
 
 
-## Example 3: Pendulum with free support
+## Example 3: Pendulum with Spring-loaded support
 
 Just run the **EVAL3.m** to derive equations and solve intial condition problem:
 
 ### Usage:
 ``` MATLAB
 syms th Dth x Dx
-syms M m l g 
+syms M m l k g 
 
 %% Kinetic and Potential Energy
 Vx2 = (Dx + l*Dth*cos(th))^2 + (l*Dth*sin(th))^2;
 T   = 1/2*m*Vx2 + 1/2*M*Dx^2;
 
-V = m*g*l*(1-cos(th));
+V = m*g*l*(1-cos(th)) + 1/2*k*x^2;
 
 L = T - V;
 %% Derive Equations
@@ -108,8 +108,8 @@ Eq = LagrangeDynamicEqDeriver(L, q, Dq);
 %% Solve Equations
 
 tt = linspace(0,10,200);
-[SS, xx] = DynamicEqSolver(Eq, q, Dq, [M m l g],...
-                           [2 1 0.5 9.81], tt, [45/180*pi,0, 0, 0]);
+[SS, xx] = DynamicEqSolver(Eq, q, Dq, [M m l k g],...
+                           [2, 1, 0.5, 50, 9.81], tt, [45/180*pi,0, 0, 0]);
 ```
 
 Angle and length of spring pendulum:
