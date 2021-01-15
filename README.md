@@ -11,7 +11,7 @@ Functinality of the library has been Illustrated by the following examples:
 
 ## Example 1: Double Pendulum
 
-Just run the ```**EVAL1.m**``` to derive equations and solve intial condition problem:
+Just run the ```EVAL1.m``` to derive equations and solve intial condition problem:
 
 ### Usage:
 ``` Matlab
@@ -54,7 +54,7 @@ Animated Response:
 	
 ## Example 2: Spring Pendulum
 
-Just run the **EVAL2.m** to derive equations and solve intial condition problem:
+Just run the ```EVAL2.m``` to derive equations and solve intial condition problem:
 
 ### Usage:
 ``` MATLAB
@@ -89,7 +89,7 @@ Animated Response:
 
 ## Example 3: Pendulum with Spring-loaded support
 
-Just run the **EVAL3.m** to derive equations and solve intial condition problem:
+Just run the ```EVAL3.m``` to derive equations and solve intial condition problem:
 
 ### Usage:
 ``` MATLAB
@@ -127,7 +127,7 @@ Animated Response:
 
 ## Example 4: Double Pendulum with free support
 
-Just run the **EVAL4.m** to derive equations and solve intial condition problem:
+Just run the ```EVAL4.m``` to derive equations and solve intial condition problem:
 
 ``` MATLAB
 syms x th1 th2 Dx Dth1 Dth2 
