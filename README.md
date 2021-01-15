@@ -11,7 +11,7 @@ Functinality of the library has been Illustrated by the following examples:
 
 ## Example 1: Double Pendulum
 
-Just run the **EVAL1.m** to derive equations and solve intial condition problem:
+Just run the ```**EVAL1.m**``` to derive equations and solve intial condition problem:
 
 ### Usage:
 ``` Matlab
