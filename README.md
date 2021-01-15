@@ -2,10 +2,12 @@
 
 Using the above library, one can derive differential equations for any dynamic systems and solve response of the system for a given conditions.
 
-Functinality of the library has been demonstrated by the following examples:
+Functinality of the library has been Illustrated by the following examples:
 
 1. Double Pendulum
 2. Spring Pendulum
+3. Pendulum with Spring-loaded support
+4. Double Pendulum with free support
 
 ## Example 1: Double Pendulum
 
