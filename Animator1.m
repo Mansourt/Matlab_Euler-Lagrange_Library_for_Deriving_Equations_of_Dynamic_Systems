@@ -22,8 +22,8 @@ try
     H2 = line([x21 x22],[y21 y22],'linewidth',7,'color','r');
     
     Txt = sprintf('Time: %0.2f sec', tt(1));
-    Htxt = text(2,6, Txt);
-    set(Htxt, 'fontsize', 12, 'fontweight', 'bold');
+    Htxt = text(2,7, Txt);
+    set(Htxt, 'fontsize', 16, 'fontweight', 'bold');
     
     axis([0 10 0 6]); box off; axis equal
     set(gca,'xlim',[1 9],'ylim',[1 7],'xtick',[], 'ytick', [])
