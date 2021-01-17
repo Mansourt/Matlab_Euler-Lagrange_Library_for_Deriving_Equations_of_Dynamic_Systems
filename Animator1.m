@@ -22,11 +22,11 @@ try
     H2 = line([x21 x22],[y21 y22],'linewidth',7,'color','r');
     
     Txt = sprintf('Time: %0.2f sec', tt(1));
-    Htxt = text(3,8, Txt);
+    Htxt = text(2,6, Txt);
     set(Htxt, 'fontsize', 12, 'fontweight', 'bold');
     
-    axis([0 10 0 6]); box on; axis equal
-    set(gca,'xlim',[1 9],'ylim',[0 9],'xtick',[], 'ytick', [])
+    axis([0 10 0 6]); box off; axis equal
+    set(gca,'xlim',[1 9],'ylim',[1 7],'xtick',[], 'ytick', [])
     
     frame = getframe(Hf); im = frame2im(frame); [imind,cm] = rgb2ind(im,256);
     imwrite(imind,cm,filename,'gif', 'Loopcount',inf, 'DelayTime',0.05);
