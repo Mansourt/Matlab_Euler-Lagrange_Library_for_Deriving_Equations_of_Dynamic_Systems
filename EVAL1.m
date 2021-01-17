@@ -36,11 +36,11 @@ plot(tt,xx(:,1),'r', 'linewidth',2); hold on; plot(tt,xx(:,2),'--b','linewidth',
 S1 = sprintf('$ \\theta_1$'); 
 S2 = sprintf('$ \\theta_2$');
 H = legend(S1, S2); 
-set(H,'interpreter','latex','fontsize',14,'location','SouthWest');
+set(H,'interpreter','latex','fontsize',16,'location','SouthWest');
 
-xlabel('Time (sec)'); ylabel('Angles (rad)');
-Pos = get(gcf, 'Position');
-set(gcf, 'Position', [Pos(1:2), Pos(3:4)*0.7]);
+hx = xlabel('Time (sec)');   set(hx, 'fontsize', 16);
+hy = ylabel('Angles (rad)'); set(hy, 'fontsize', 16);
+set(gca, 'fontsize', 16);
 saveas(gcf, 'Pic/Ex1.png')
 
 %%
