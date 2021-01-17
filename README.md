@@ -42,15 +42,22 @@ Eq = LagrangeDynamicEqDeriver(L, q, Dq);
                            [0.5 0.5 1 2 0.2 0.5 9.81], tt, [120,-90,0,0]/180*pi);
 ````
 
-Anlges of double pendulum:
-<p align="center">
-  <img src="../master/Pic/Ex1.png" />
-</p>
 
-Animated Response:
-<p align="center">
-  <img src="../master/Pic/Anim1.gif" />
-</p>
+<table style="width:100%">
+   <tr>
+        <th>Anlges of double pendulum:</th>
+		<th>Animated Response:</th>
+  </tr>
+  <tr>
+		<td>
+			<img src="../master/Pic/Ex1.png" />
+		</td>
+		<td>
+			<img src="../master/Pic/Anim1.gif" />
+		</td>
+  </tr>
+</table>
+
 	
 ## Example 2: Spring Pendulum
 
