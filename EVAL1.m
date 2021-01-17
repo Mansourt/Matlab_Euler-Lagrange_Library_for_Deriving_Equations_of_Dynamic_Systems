@@ -39,7 +39,10 @@ H = legend(S1, S2);
 set(H,'interpreter','latex','fontsize',14,'location','SouthWest');
 
 xlabel('Time (sec)'); ylabel('Angles (rad)');
+Pos = get(gcf, 'Position');
+set(gcf, 'Position', [Pos(1:2), Pos(3:4)*0.7]);
 saveas(gcf, 'Pic/Ex1.png')
+
 %%
 Animator1(xx(:,1:2), tt)
 
