@@ -49,10 +49,10 @@ Eq = LagrangeDynamicEqDeriver(L, q, Dq);
 		<th>Animated Response:</th>
   </tr>
   <tr>
-		<td width="200">
+		<td width="50%">
 			<img src="../master/Pic/Ex1.png" />
 		</td>
-		<td width="200">
+		<td width="50%">
 			<img src="../master/Pic/Anim1.gif" />
 		</td>
   </tr>
