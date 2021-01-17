@@ -1,10 +1,11 @@
-function Animator1(Th)
+function Animator1(Th, tt)
 % Author: Mansour Torabi
 % Email: smtoraabi@ymail.com
 %%
 try
-    filename = 'Anim1.gif';
+    filename = 'Pic/Anim1.gif';
     Hf = figure;
+    set(Hf,'color',[1 1 1]);
     
     th1 = Th(1,1); th2 = Th(1,2);
     
@@ -16,13 +17,16 @@ try
     x21 = x12;
     y21 = y12;
     
-    x22 = x21+ L2*sin(th1+th2);
-    y22 = y21 -L2*cos(th1+th2);
+    x22 = x21+ L2*sin(th2);
+    y22 = y21 -L2*cos(th2);
     H2 = line([x21 x22],[y21 y22],'linewidth',7,'color','r');
     
+    Txt = sprintf('Time: %0.2f sec', tt(1));
+    Htxt = text(3,8, Txt);
+    set(Htxt, 'fontsize', 12, 'fontweight', 'bold');
     
     axis([0 10 0 6]); box on; axis equal
-    set(gca,'xlim',[1 9],'ylim',[0 9])
+    set(gca,'xlim',[1 9],'ylim',[0 9],'xtick',[], 'ytick', [])
     
     frame = getframe(Hf); im = frame2im(frame); [imind,cm] = rgb2ind(im,256);
     imwrite(imind,cm,filename,'gif', 'Loopcount',inf, 'DelayTime',0.05);
@@ -38,11 +42,14 @@ try
         x21 = x12;
         y21 = y12;
         
-        x22 = x21+ L2*sin(th1+th2);
-        y22 = y21 -L2*cos(th1+th2);
+        x22 = x21+ L2*sin(th2);
+        y22 = y21 -L2*cos(th2);
         %%
         set(H1,'XData',[x11 x12],'YData',[y11 y12])
         set(H2,'XData',[x21 x22],'YData',[y21 y22])
+        
+        Txt = sprintf('Time: %0.2f sec', tt(i));
+        set(Htxt, 'string', Txt);
         
         frame = getframe(Hf); im = frame2im(frame); [imind,cm] = rgb2ind(im,256);
         imwrite(imind,cm,filename,'gif', 'WriteMode','append', 'DelayTime',0.05);
