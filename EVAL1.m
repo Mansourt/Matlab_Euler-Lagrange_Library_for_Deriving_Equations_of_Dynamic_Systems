@@ -31,7 +31,8 @@ Eq = LagrangeDynamicEqDeriver(L, q, Dq);
                            [0.5, 0.5, 1, 5, 0.2, 0.5, 9.81], tt, [120,30,0,0]/180*pi);
 %%             
 figure; 
-plot(tt,xx(:,1),'r', 'linewidth',2); hold on; plot(tt,xx(:,2),'--b','linewidth',2);
+plot(tt,xx(:,1)/pi*180,'r', 'linewidth',2); hold on; plot(tt,xx(:,2)/pi*180,...
+    '--b','linewidth',2);
 
 S1 = sprintf('$ \\theta_1$'); 
 S2 = sprintf('$ \\theta_2$');
@@ -39,7 +40,7 @@ H = legend(S1, S2);
 set(H,'interpreter','latex','fontsize',18,'location','SouthWest');
 
 hx = xlabel('Time (sec)');   set(hx, 'fontsize', 18);
-hy = ylabel('Angles (rad)'); set(hy, 'fontsize', 18);
+hy = ylabel('Angles (degree)'); set(hy, 'fontsize', 18);
 set(gca, 'fontsize', 18);
 saveas(gcf, 'Pic/Ex1.png')
 
