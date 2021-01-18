@@ -16,19 +16,22 @@ Eq = LagrangeDynamicEqDeriver(L, q, Dq);
 
 %% Solve Equations
 
-tt = linspace(0,30,500);
+tt = linspace(0,10,100);
 [SS, xx] = DynamicEqSolver(Eq, q, Dq, [m l k g],...
                            [1 1 10 9.81], tt, [45/180*pi,0.1, 0, 0]);
 %% Plot and Animate Responses            
 figure; 
-plot(tt, xx(:,1),'r'); hold on; plot(tt, xx(:,2) + 1,'k');
+plot(tt, xx(:,1),'r','linewidth',2); hold on; plot(tt, xx(:,2) + 1,'k', 'linewidth',2);
 
 S1 = sprintf('$ \\theta$'); 
 S2 = sprintf('$ x$');
 H = legend(S1, S2); 
-set(H,'interpreter','latex','fontsize',14,'location','SouthWest');
+set(H,'interpreter','latex','fontsize',18,'location','SouthWest');
 
-xlabel('Time (sec)'); ylabel('Angles (rad)- Lenghth (m)');
+hx = xlabel('Time (sec)');  set(hx, 'fontsize', 18);
+hy = ylabel('Angles (rad)- Lenghth (m)'); set(hy, 'fontsize', 18);
+set(gca, 'fontsize', 18);
+saveas(gcf, 'Pic/Ex2.png')
 %%
-Animator2(xx(:,1:2))
+Animator2(xx(:,1:2), tt)
 

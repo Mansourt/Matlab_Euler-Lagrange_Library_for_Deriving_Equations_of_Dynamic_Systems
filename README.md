@@ -84,14 +84,20 @@ tt = linspace(0,30,500);
                            [1 1 10 9.81], tt, [45/180*pi,0.1, 0, 0]);
 ```
 
-Angle and length of spring pendulum:
-<p align="center">
-  <img src="../master/Pic/Ex2.png" />
-</p>
-Animated Response:
-<p align="center">
-  <img src="../master/Pic/Anim2.gif" />
-</p>
+<table style="width:100%">
+   <tr>
+        <th>Angle and length of spring pendulum:</th>
+		<th>Animated Response:</th>
+  </tr>
+  <tr>
+		<td width="50%">
+			<img src="../master/Pic/Ex2.png" />
+		</td>
+		<td width="50%">
+			<img src="../master/Pic/Anim2.gif" />
+		</td>
+  </tr>
+</table>
 
 
 ## Example 3: Pendulum with Spring-loaded support

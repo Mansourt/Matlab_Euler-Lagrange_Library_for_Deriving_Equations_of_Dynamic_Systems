@@ -51,7 +51,7 @@ try
         Txt = sprintf('Time: %0.2f sec', tt(i));
         set(Htxt, 'string', Txt);
         
-        frame = getframe(Hf); im = frame2im(frame); [imind,cm] = rgb2ind(im,256);
+        frame = getframe(Hf); im = frame2im(frame); [imind,cm] = rgb2ind(im, 256);
         imwrite(imind,cm,filename,'gif', 'WriteMode','append', 'DelayTime',0.05);
         
     end
