@@ -79,7 +79,7 @@ Eq = LagrangeDynamicEqDeriver(L, q, Dq);
 
 %% Solve Equations
 
-tt = linspace(0,30,500);
+tt = linspace(0,10,300);
 [SS, xx] = DynamicEqSolver(Eq, q, Dq, [m l k g],...
                            [1 1 10 9.81], tt, [45/180*pi,0.1, 0, 0]);
 ```
