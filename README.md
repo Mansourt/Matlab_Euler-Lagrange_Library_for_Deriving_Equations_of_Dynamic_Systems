@@ -172,7 +172,7 @@ L = T - V;
 %%
 q  = [x, th1, th2];
 Dq = [Dx, Dth1, Dth2];
-tt = linspace(0,25,400);
+tt = linspace(0,25,500);
 Eq = LagrangeDynamicEqDeriver(L, q, Dq);
 [SS, xx] = DynamicEqSolver(Eq, q, Dq, [M m1 m2 l1 l2 g],...
                            [0.5, 0.5, 2, 1, 1, 9.81], tt, [0, pi/3, 2*pi/3, 0, 0, 0]);
