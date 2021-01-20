@@ -1,10 +1,11 @@
-function Animator4(Th)
+function Animator4(Th, tt)
 % Author: Mansour Torabi
 % Email: smtoraabi@ymail.com
 %%
 try
-    filename = 'Anim4.gif';
+    filename = 'Pic/Anim4.gif';
     Hf = figure;
+    set(Hf,'color',[1 1 1]);
     
     dx = Th(1,1); th1 = Th(1,2); th2 = Th(1,3);
     
@@ -30,9 +31,13 @@ try
         'linewidth', 2, 'color', 'r', 'markerfacecolor', 'r');
     
     
-    axis([0 10 0 6]); box on; axis equal
-    set(gca,'xlim',[1 9],'ylim',[0 9])
+    axis([0 10 0 6]); box off; axis equal
+    set(gca,'xlim',[1 9],'ylim',[0 9],'xtick',[], 'ytick', [])
     
+    Txt = sprintf('Time: %0.2f sec', tt(1));
+    Htxt = text(3.5, 8, Txt);
+    set(Htxt, 'fontsize', 16, 'fontweight', 'bold');
+
     frame = getframe(Hf); im = frame2im(frame); [imind,cm] = rgb2ind(im,256);
     imwrite(imind,cm,filename,'gif', 'Loopcount',inf, 'DelayTime',0.05);
     
@@ -55,6 +60,11 @@ try
         set(H2,'XData',[x21 x22],'YData',[y21 y22]);
         set(H1m,'XData',x12,'YData',y12);
         set(H2m,'XData',x22,'YData',y22);
+        
+        Txt = sprintf('Time: %0.2f sec', tt(i));
+        set(Htxt, 'string', Txt);
+
+        
         frame = getframe(Hf); im = frame2im(frame); [imind,cm] = rgb2ind(im,256);
         imwrite(imind,cm,filename,'gif', 'WriteMode','append', 'DelayTime',0.05);
         

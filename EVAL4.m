@@ -26,7 +26,7 @@ L = T - V;
 %%
 q  = [x, th1, th2];
 Dq = [Dx, Dth1, Dth2];
-tt = linspace(0,25,500);
+tt = linspace(0,25,400);
 Eq = LagrangeDynamicEqDeriver(L, q, Dq);
 [SS, xx] = DynamicEqSolver(Eq, q, Dq, [M m1 m2 l1 l2 g],...
                            [0.5, 0.5, 2, 1, 1, 9.81], tt, [0, pi/3, 2*pi/3, 0, 0, 0]);
@@ -34,15 +34,18 @@ Eq = LagrangeDynamicEqDeriver(L, q, Dq);
 figure; 
 plot(tt,xx(:,1),'color',[0,0.6,0],'linewidth',2); 
 hold on; 
-plot(tt,xx(:,2),'b'); plot(tt,xx(:,3),'color','r');
+plot(tt,xx(:,2),'b','linewidth',2); plot(tt,xx(:,3),'color','r','linewidth',2);
 
 S1 = sprintf('$ x $');
 S2 = sprintf('$ \\theta_1$'); 
 S3 = sprintf('$ \\theta_2$');
 H = legend(S1, S2, S3); 
-set(H,'interpreter','latex','fontsize',14,'location','SouthWest');
+set(H,'interpreter','latex','fontsize',18,'location','SouthWest');
 
-xlabel('Time (sec)'); ylabel('Angles (rad), Length(m)');
+hx = xlabel('Time (sec)');  set(hx, 'fontsize', 18);
+hy = ylabel('Angles (rad)- Lenghth (m)'); set(hy, 'fontsize', 18);
+set(gca, 'fontsize', 18);
+saveas(gcf, 'Pic/Ex4.png')
 %%
-Animator4(xx(:,1:3))
+Animator4(xx(:,1:3), tt)
 

@@ -127,15 +127,21 @@ tt = linspace(0,10,200);
                            [2, 1, 0.5, 50, 9.81], tt, [45/180*pi,0, 0, 0]);
 ```
 
-Slider Position and Pendulum Anlge:
-<p align="center">
-  <img src="../master/Pic/Ex3.png" />
-</p>
-Animated Response:
-<p align="center">
-  <img src="../master/Pic/Anim3.gif" />
-</p>
 
+<table style="width:100%">
+   <tr>
+        <th>Slider Position and Pendulum Anlge:</th>
+		<th>Animated Response:</th>
+  </tr>
+  <tr>
+		<td width="50%">
+			<img src="../master/Pic/Ex3.png" />
+		</td>
+		<td width="50%">
+			<img src="../master/Pic/Anim3.gif" />
+		</td>
+  </tr>
+</table>
 
 
 ## Example 4: Double Pendulum with free support
@@ -166,19 +172,26 @@ L = T - V;
 %%
 q  = [x, th1, th2];
 Dq = [Dx, Dth1, Dth2];
-tt = linspace(0,25,500);
+tt = linspace(0,25,400);
 Eq = LagrangeDynamicEqDeriver(L, q, Dq);
 [SS, xx] = DynamicEqSolver(Eq, q, Dq, [M m1 m2 l1 l2 g],...
                            [0.5, 0.5, 2, 1, 1, 9.81], tt, [0, pi/3, 2*pi/3, 0, 0, 0]);
 ```
 Slider Position, Pendulum Anlges:
-<p align="center">
-  <img src="../master/Pic/Ex4.png" />
-</p>
-Animated Response:
-<p align="center">
-  <img src="../master/Pic/Anim4.gif" />
-</p>					   
+<table style="width:100%">
+   <tr>
+        <th>Slider Position, Pendulum Anlges:</th>
+		<th>Animated Response:</th>
+  </tr>
+  <tr>
+		<td width="50%">
+			<img src="../master/Pic/Ex4.png" />
+		</td>
+		<td width="50%">
+			<img src="../master/Pic/Anim4.gif" />
+		</td>
+  </tr>
+</table>					   
 
 
 # Contact
