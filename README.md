@@ -17,7 +17,7 @@ Functinality of the library has been Illustrated by the following examples:
   <tr>
 		<td width="10%"> </td>
 		<td width="80%">
-			<img src="../master/Pic/Ex1A.gif" />
+			<img src="../master/Pic/Ex1A.png" />
 		</td>
 		<td width="10%"> </td>
   </tr>
