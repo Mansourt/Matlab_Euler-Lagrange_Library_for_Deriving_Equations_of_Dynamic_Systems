@@ -27,7 +27,7 @@ Functinality of the library has been Illustrated by the following examples:
 
 Just run the ```EVAL1.m``` to **derive equations** and solve intial condition problem:
 
-### Usage:
+### Code Usage:
 ``` Matlab
 syms th1 th2  Dth1 Dth2 
 syms l1 l2 m1 m2 J1 J2  g t 
@@ -75,9 +75,23 @@ Eq = LagrangeDynamicEqDeriver(L, q, Dq);
 	
 ## Example 2: Spring Pendulum
 
-Just run the ```EVAL2.m``` to derive equations and solve intial condition problem:
+**Problem Definition:**
+<table style="width:100%">
+  <tr>
+		<td width="10%"> </td>
+		<td width="80%">
+			<img src="../master/Pic/Ex2A.png" />
+		</td>
+		<td width="10%"> </td>
+  </tr>
+</table>
 
-### Usage:
+**How to solve:**
+
+Just run the ```EVAL2.m``` to **derive equations** and solve intial condition problem:
+
+### Code Usage:
+
 ``` MATLAB
 syms th Dth x Dx
 syms m l k g t 
@@ -116,9 +130,22 @@ tt = linspace(0,10,300);
 
 ## Example 3: Pendulum with Spring-loaded support
 
-Just run the ```EVAL3.m``` to derive equations and solve intial condition problem:
+**Problem Definition:**
+<table style="width:100%">
+  <tr>
+		<td width="10%"> </td>
+		<td width="80%">
+			<img src="../master/Pic/Ex3A.png" />
+		</td>
+		<td width="10%"> </td>
+  </tr>
+</table>
 
-### Usage:
+**How to solve:**
+
+Just run the ```EVAL3.m``` to **derive equations** and solve intial condition problem:
+
+### Code Usage:
 ``` MATLAB
 syms th Dth x Dx
 syms M m l k g 
@@ -160,8 +187,22 @@ tt = linspace(0,10,200);
 
 ## Example 4: Double Pendulum with free support
 
-Just run the ```EVAL4.m``` to derive equations and solve intial condition problem:
+**Problem Definition:**
+<table style="width:100%">
+  <tr>
+		<td width="10%"> </td>
+		<td width="80%">
+			<img src="../master/Pic/Ex4A.png" />
+		</td>
+		<td width="10%"> </td>
+  </tr>
+</table>
 
+**How to solve:**
+
+Just run the ```EVAL4.m``` to **derive equations** and solve intial condition problem:
+
+### Code Usage:
 ``` MATLAB
 syms x th1 th2 Dx Dth1 Dth2 
 syms M m1 m2 l1 l2 g
