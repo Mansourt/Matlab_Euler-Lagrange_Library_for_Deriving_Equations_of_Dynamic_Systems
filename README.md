@@ -299,7 +299,7 @@ Eq = LagrangeDynamicEqDeriver(L, q, Dq);
 Slider Position, Pendulum Anlges:
 <table style="width:100%">
    <tr>
-        <th>Slider Position, Pendulum Anlges:</th>
+        <th>Angle and length of spring pendulum:</th>
 		<th>Animated Response:</th>
   </tr>
   <tr>
