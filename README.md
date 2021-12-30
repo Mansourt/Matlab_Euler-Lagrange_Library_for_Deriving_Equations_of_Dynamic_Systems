@@ -13,8 +13,14 @@ Functinality of the library has been Illustrated by the following examples:
 ## Example 1: Double Pendulum
 
 **Problem Definition:**
-<table style="width:50%">
-	<img src="../master/Pic/Ex1A.png" />
+<table style="width:100%">
+  <tr>
+		<td width="10%"> </td>
+		<td width="80%">
+			<img src="../master/Pic/Ex1A.gif" />
+		</td>
+		<td width="10%"> </td>
+  </tr>
 </table>
 
 **How to solve:**
