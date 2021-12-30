@@ -12,8 +12,8 @@ Functinality of the library has been Illustrated by the following examples:
 
 ## Example 1: Double Pendulum
 
-Problem Definition:
-<table style="width:100%">
+**Problem Definition:**
+<table style="width:70%">
 	<img src="../master/Pic/Ex1A.png" />
 </table>
 
