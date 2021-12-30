@@ -12,6 +12,10 @@ Functinality of the library has been Illustrated by the following examples:
 
 ## Example 1: Double Pendulum
 
+<table style="width:100%">
+	<img src="../master/Pic/Ex1A.png" />
+</table>
+
 Just run the ```EVAL1.m``` to derive equations and solve intial condition problem:
 
 ### Usage:
