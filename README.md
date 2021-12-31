@@ -312,7 +312,7 @@ Slider Position, Pendulum Anlges:
   </tr>
 </table>
 
-## Example 5: Coupled Pendulum 
+## Example 6: Coupled Pendulum 
 
 **Problem Definition:**
 <table style="width:100%">
