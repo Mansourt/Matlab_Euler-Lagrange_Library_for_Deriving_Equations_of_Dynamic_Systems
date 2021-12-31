@@ -9,6 +9,8 @@ Functinality of the library has been Illustrated by the following examples:
 2. Spring Pendulum
 3. Pendulum with Spring-loaded support
 4. Double Pendulum with free support
+5. Double Spring Pendulum 
+6. Couple Pendulum
 
 ## Example 1: Double Pendulum
 
