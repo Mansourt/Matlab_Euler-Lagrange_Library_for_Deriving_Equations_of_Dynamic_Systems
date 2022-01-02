@@ -48,7 +48,7 @@ H = legend(S1, S2);
 set(H,'interpreter','latex','fontsize',18,'location','SouthWest');
 
 hx = xlabel('Time (sec)');  set(hx, 'fontsize', 18);
-hy = ylabel('Angles (rad)- Lenghth (m)'); set(hy, 'fontsize', 18);
+hy = ylabel('Angles (rad)'); set(hy, 'fontsize', 18);
 set(gca, 'fontsize', 18);
 saveas(gcf, 'Pic/Ex6.png')
 %%

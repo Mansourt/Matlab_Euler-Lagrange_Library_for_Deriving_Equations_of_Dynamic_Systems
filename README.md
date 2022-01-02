@@ -3,14 +3,15 @@
 
 Using the above library, one can derive differential equations for any dynamic systems and solve response of the system for a given conditions.
 
-Functinality of the library has been Illustrated by the following examples:
+Functionality of the library has been illustrated by the following examples:
 
 1. Double Pendulum
 2. Spring Pendulum
 3. Pendulum with Spring-loaded support
 4. Double Pendulum with free support
 5. Double Spring Pendulum 
-6. Couple Pendulum
+6. Coupled Pendulum
+7. Spring Pendulum with Rolling base inside a semicircle
 
 ## Example 1: Double Pendulum
 
@@ -379,6 +380,69 @@ Slider Position, Pendulum Anlges:
 		</td>
 		<td width="50%">
 			<img src="../master/Pic/Anim6.gif" />
+		</td>
+  </tr>
+</table>
+
+## Example 7: Spring Pendulum with Rolling base inside a semicircle 
+
+**Problem Definition:**
+<table style="width:100%">
+  <tr>
+		<td width="10%"> </td>
+		<td width="80%">
+			<img src="../master/Pic/Ex7A.png" />
+		</td>
+		<td width="10%"> </td>
+  </tr>
+</table>
+
+**How to solve:**
+
+Just run the ```EVAL7.m``` to **derive equations** and solve intial condition problem:
+
+### Code Usage:
+``` MATLAB
+syms th0 ths x Dth0 Dths Dx
+syms R r M J m k l g 
+
+%% Kinetic and Potential Energy
+
+VoM = (R-r)*[cos(th0), sin(th0)];
+Wd  = -(R-r)*Dth0/r;
+
+Vm = (R-r)*Dth0*[cos(th0), sin(th0)] + (l+x)*Dths*[cos(ths), sin(ths)] + Dx*[sin(ths), -cos(ths)];
+
+yM = -(R-r)*cos(th0);
+ym = yM - (l+x)*cos(ths);
+
+T = 1/2*M*(VoM*VoM.') + 1/2*m*(Vm*Vm.') + 1/2*J*Wd^2;
+
+V = M*g*yM + m*g*ym + 1/2*k*x^2;
+
+L = T - V;
+%%
+q  = [th0, ths, x];
+Dq = [Dth0, Dths, Dx];
+tt = linspace(0, 20, 500);
+Eq = LagrangeDynamicEqDeriver(L, q, Dq);
+R0 = 5; r0 = 1; l0 = 2; 
+[SS, xx] = DynamicEqSolver(Eq, q, Dq, [R r M J m k l g],...
+                           [R0, r0, 1, 2, 3, 30, l0, 9.81], tt, [pi/3, pi/2, 0, 0, 0, 0]);
+
+```
+Slider Position, Pendulum Anlges:
+<table style="width:100%">
+   <tr>
+        <th>Angles of spring length:</th>
+		<th>Animated Response:</th>
+  </tr>
+  <tr>
+		<td width="50%">
+			<img src="../master/Pic/Ex7.png" />
+		</td>
+		<td width="50%">
+			<img src="../master/Pic/Anim7.gif" />
 		</td>
   </tr>
 </table>
