@@ -453,3 +453,7 @@ Slider Position, Pendulum Anlges:
 
 # Contact
 Email: smtoraabi@ymail.com
+
+<br/>
+[<img align="left" alt="Mansour_Torabi | YouTube" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />](https://www.youtube.com/channel/UCD21zmmJf80fO2Z78x0sngg)
+[<img align="left" alt="Mansour_Torabi | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />](https://www.linkedin.com/in/mansour-torabi-b954b441)
