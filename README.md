@@ -130,6 +130,8 @@ tt = linspace(0,10,300);
   </tr>
 </table>
 
+Watch video on youtube:
+[<img align="left" alt="codeSTACKr | YouTube" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />](https://studio.youtube.com/video/CXE9fi7fUOo/edit)
 
 ## Example 3: Pendulum with Spring-loaded support
 
