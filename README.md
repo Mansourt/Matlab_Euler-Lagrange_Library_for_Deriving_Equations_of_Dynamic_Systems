@@ -191,10 +191,7 @@ tt = linspace(0,10,200);
   </tr>
 </table>
 
-<ins>Watch on YouTube: </ins> <br />
-[<img align="left" alt="SpringPendulumSimulation | YouTube" width="30px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />](https://www.youtube.com/watch?v=MSDQQbIvOVw)
 
-<br />
 
 ## Example 4: Double Pendulum with free support
 
@@ -322,6 +319,11 @@ Slider Position, Pendulum Anlges:
 		</td>
   </tr>
 </table>
+
+<ins>Watch on YouTube: </ins> <br />
+[<img align="left" alt="SpringPendulumSimulation | YouTube" width="30px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />](https://www.youtube.com/watch?v=MSDQQbIvOVw)
+
+<br />
 
 ## Example 6: Coupled Pendulum 
 
