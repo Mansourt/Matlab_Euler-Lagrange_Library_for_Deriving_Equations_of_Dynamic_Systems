@@ -75,6 +75,10 @@ Eq = LagrangeDynamicEqDeriver(L, q, Dq);
   </tr>
 </table>
 
+<ins>Watch on YouTube: </ins> <br />
+[<img align="left" alt="SpringPendulumSimulation | YouTube" width="30px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />](https://www.youtube.com/watch?v=CulqVNRt5ms)
+
+<br />
 	
 ## Example 2: Spring Pendulum
 
