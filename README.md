@@ -463,7 +463,7 @@ Slider Position, Pendulum Anlges:
 </table>
 
 
-## Example 8: Coupled Double Pendulums with Spring-loaded sliding support 
+## Example 8: Coupled Triple Pendulums with Spring-loaded sliding support 
 
 **Problem Definition:**
 <table style="width:100%">
@@ -477,10 +477,10 @@ Slider Position, Pendulum Anlges:
 </table>
 
 
-Double Pendulum #1 Anlges:
+Triple Pendulum #1 Position and Anlges:
 <table style="width:100%">
    <tr>
-        <th>Double Pendulum #1 Angles:</th>
+        <th>Triple Pendulum #1 Position and Anlges:</th>
 		<th>Animated Response:</th>
   </tr>
   <tr>
