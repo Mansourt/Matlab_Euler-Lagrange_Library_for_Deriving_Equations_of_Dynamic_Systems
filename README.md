@@ -462,6 +462,37 @@ Slider Position, Pendulum Anlges:
   </tr>
 </table>
 
+
+## Example 8: Coupled Double Pendulums with Spring-loaded sliding support 
+
+**Problem Definition:**
+<table style="width:100%">
+  <tr>
+		<td width="10%"> </td>
+		<td width="80%">
+			<img src="../master/Pic/Ex8A.png" />
+		</td>
+		<td width="10%"> </td>
+  </tr>
+</table>
+
+
+Double Pendulum #1 Anlges:
+<table style="width:100%">
+   <tr>
+        <th>Double Pendulum #1 Angles:</th>
+		<th>Animated Response:</th>
+  </tr>
+  <tr>
+		<td width="50%">
+			<img src="../master/Pic/Ex8.1.png" />
+		</td>
+		<td width="50%">
+			<img src="../master/Pic/Anim8.gif" />
+		</td>
+  </tr>
+</table>
+
 # Contact
 Email: smtoraabi@ymail.com
 
