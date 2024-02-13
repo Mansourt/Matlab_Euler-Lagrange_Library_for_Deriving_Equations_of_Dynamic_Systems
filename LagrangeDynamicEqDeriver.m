@@ -27,7 +27,7 @@ for ii = 1:N
     for jj = 1:N
         q_dst = [char(q(jj)), '(t)'];
         Dq_dst = ['diff(', q_dst,',t)'];
-        L_Dq(ii)  = subs(L_Dq(ii), {q(jj), Dq(jj)}, {q_dst, Dq_dst});
+        L_Dq(ii)  = subs(L_Dq(ii), {q(jj), Dq(jj)}, {str2sym(q_dst), str2sym(Dq_dst)});
     end
     
     L_Dq_fcn     = symfun(L_Dq(ii), t);
@@ -41,8 +41,8 @@ for ii = 1:N
         
         DDq_dst = ['DD',char(q(jj))];
         
-        L_Dq_dt(ii)   = subs(L_Dq_dt(ii), {q_orig, Dq_orig, DDq_orig}, ...
-                        {q(jj), Dq(jj), DDq_dst});
+        L_Dq_dt(ii)   = subs(L_Dq_dt(ii), {str2sym(q_orig), str2sym(Dq_orig), str2sym(DDq_orig)}, ...
+                        {q(jj), Dq(jj), str2sym(DDq_dst)});
         
     end
 end
