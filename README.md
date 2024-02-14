@@ -533,20 +533,17 @@ Triple Pendulum #1 Position and Anlges:
 The simulation results are based on the following Values:
 
 ``` MATLAB
-% List of Parameter Values
-Plist1 = [M1 m11 m12 m13 l11 l12 l13];
-Pval1  = [4, 2, 1,1, 1, 1,1];
-Plist2 = [M2 m21 m22 m23 l21 l22 l23];
-Pval2  = [8, 2, 1,1, 1, 1,1];
 
-Plist3 = [g l0 ls1 ls2 k1 k2];
-Pval3  = [9.8, 1, 1,1, 100,50];
+% List of Parameter Values
+m0 = 1;
+l0 = 2;
+g0 = 9.81;
 
 % Initial Conditions
-x01  = [0,pi/6,2*pi/6,4*pi/5];
-Dx01 = zeros(1,4);
-x02  = [0.5,pi/4,2*pi/4,5*pi/8];
-Dx02 = zeros(1,4);
+th0  = 50;
+phi0 = 0;
+Dth0 = 0;
+Dphi0 = 75;
 
 
 ```
