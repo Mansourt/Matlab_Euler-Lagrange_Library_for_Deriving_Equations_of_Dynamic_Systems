@@ -197,6 +197,10 @@ tt = linspace(0,10,200);
 </table>
 
 
+<ins>Watch on YouTube: </ins> <br />
+[<img align="left" alt="MATLAB-simulation| YouTube" width="30px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />](https://www.youtube.com/watch?v=U0slEUiXeuc)
+
+<br />
 
 ## Example 4: Double Pendulum with free support
 
@@ -260,6 +264,11 @@ Slider Position, Pendulum Anlges:
 		</td>
   </tr>
 </table>					   
+
+<ins>Watch on YouTube: </ins> <br />
+[<img align="left" alt="MATLAB-simulation| YouTube" width="30px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />](https://www.youtube.com/watch?v=ew0FAbun2oE)
+
+<br />
 
 ## Example 5: Double Spring Pendulum 
 
